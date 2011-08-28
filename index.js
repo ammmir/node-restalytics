@@ -153,8 +153,10 @@ setInterval(flush_data_queue, MIN_FLUSH_WAIT_TIME);
 
 exports.apiKey = function(apikey) {
   mApiKey = apikey;
-};
 
-exports.devMode = function(b) {
-  mDevMode = b;
+  return {
+    devMode: function(b) {
+      mDevMode = b;
+    }
+  };
 };
