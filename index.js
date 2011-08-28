@@ -134,8 +134,6 @@ http.Server.prototype.listen = function() {
         req._restalytics.request.body = req.body;
       }
 
-      console.log('RESTalytics data point', req._restalytics);
-
       mDataQueue.push(req._restalytics);
       delete req._restalytics;
 
