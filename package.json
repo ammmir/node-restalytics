@@ -1,0 +1,14 @@
+{
+  "name": "restalytics",
+  "description": "A server-side agent for RESTalytics",
+  "version": "0.0.1",
+  "homepage": "http://restalytics.com/",
+  "author": {
+    "name": "Amir Malik",
+    "url": "http://amir.unoc.net/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ammmir/node-restalytics"
+  }
+}
