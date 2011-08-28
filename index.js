@@ -135,7 +135,6 @@ http.Server.prototype.listen = function() {
       }
 
       mDataQueue.push(req._restalytics);
-      delete req._restalytics;
 
       return _res_end.apply(this, arguments);
     };

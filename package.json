@@ -1,7 +1,7 @@
 {
   "name": "restalytics",
   "description": "A server-side agent for RESTalytics",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "http://restalytics.com/",
   "author": {
     "name": "Amir Malik",
