@@ -10,7 +10,7 @@ http.createServer(function (req, res) {
   });
 
   setTimeout(function() {
-    res.end('<h1>' + req.url + '</h1>Click any link and watch your RESTalytics dashboard:<ul>' + links + '</ul>');
+    res.end('<html><head><meta http-equiv="refresh" content="3"></head><body><h1>' + req.url + '</h1>Click any link and watch your RESTalytics dashboard:<ul>' + links + '</ul></body></html>');
   }, Math.floor(Math.random() * 100));
 }).listen(1337);
 
