@@ -52,7 +52,9 @@ function flush_data_queue() {
   }
 
   var req = http.request(options, function(res) {
-    if(res.statusCode != 200) {
+    if(res.statuscode == 403) {
+      console.error('RESTalytics: incorrect API key, please go to http://restalytics.com/ and verify that it is correct.');
+    } else if(res.statusCode != 200) {
       console.error('RESTalytics: unable to flush data. HTTP status: %d', res.statusCode);
       console.error('RESTalytics: pending_data', pending_data);
 
